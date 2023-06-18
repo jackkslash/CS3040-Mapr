@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/navigation_map">
+
+    <fragment
+        android:id="@+id/navigation_map"
+        android:name="uk.aston.maprapp.ui.map.MapFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_map" >
+        <action
+            android:id="@+id/action_navigation_map_to_updateLocation"
+            app:destination="@id/updateLocation"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <argument
+            android:name="latitude"
+            app:argType="string" />
+        <argument
+            android:name="longitude"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="uk.aston.maprapp.ui.settings.SettingsFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_navigation_user_to_helpFragment"
+            app:destination="@id/helpFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_locations"
+        android:name="uk.aston.maprapp.ui.locations.LocationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_locations" >
+        <action
+            android:id="@+id/action_navigation_locations_to_updateLocation"
+            app:destination="@id/updateLocation"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_navigation_locations_to_activitiesFragment"
+            app:destination="@id/navigation_Activities"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_navigation_locations_to_navigation_Weather"
+            app:destination="@id/navigation_Weather"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:launchSingleTop="false"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_navigation_locations_to_navigation_map"
+            app:destination="@id/navigation_map"
+            app:enterAnim="@android:anim/fade_in"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateLocation"
+        android:name="uk.aston.maprapp.ui.updateLocation.UpdateLocationFragment"
+        android:label="fragment_update_location"
+        tools:layout="@layout/fragment_update_location" >
+        <argument
+            android:name="name"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="location"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_Activities"
+        android:name="uk.aston.maprapp.ui.activities.ActivitiesFragment"
+        android:label="fragment_activities"
+        tools:layout="@layout/fragment_activities" >
+        <argument
+            android:name="activity"
+            app:argType="string" />
+        <argument
+            android:name="latitude"
+            app:argType="string" />
+        <argument
+            android:name="longitude"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_Weather"
+        android:name="uk.aston.maprapp.ui.weather.WeatherFragment"
+        android:label="fragment_weather"
+        tools:layout="@layout/fragment_weather" >
+        <argument
+            android:name="longitude"
+            app:argType="string" />
+        <argument
+            android:name="latitude"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="uk.aston.maprapp.ui.help.helpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" />
+</navigation>

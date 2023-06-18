@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">MaprApp</string>
+    <string name="title_home">Map</string>
+    <string name="title_dashboard">Settings</string>
+    <string name="title_notifications">Locations</string>
+
+    <string name="mainTemp">\Current:\u0020 \</string>
+    <string name="Celcius">°C</string>
+    <string name="feelsLikeTemp">\Feels Like:\u0020 \</string>
+    <string name="minTemp">\Min Temp:\u0020 \</string>
+    <string name="maxTemp">\Max Temp:\u0020 \</string>
+    <string name="windSpeed">\Speed of Wind:\u0020 \</string>
+    <string name="MetersPerSecond">\u0020m/s \</string>
+    <string name="weatherError">Weather could not be found, Sorry</string>
+    <string name="weatherTitle">Current Weather</string>
+    <string name="locationError">Error location can not be found!</string>
+    <string name="addLocationMarker">Click me to add to list of locations!</string>
+    <string name="activitiesError">Sorry</string>
+    <string name="activitiesErrorMessage">No activities or restaurants could be found, Sorry try again</string>
+    <string name="OKAlert">OK</string>
+    <string name="errorDirections">Could not find Directions!</string>
+    <string name="noLocationError">No Locations</string>
+    <string name="emptyNameLocation">You did not enter a name or location!</string>
+    <string name="newLocation">New Location was added!</string>
+    <string name="updatedLocation">Current location was updated!</string>
+    <string name="delete_location_data">Delete Location Data</string>
+    <string name="settings">Settings</string>
+    <string name="helpButton">Help</string>
+    <string name="twitter">Twitter</string>
+    <string name="mapr_2022">Mapr - 2022</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dirButton">Directions Button</string>
+    <string name="place">Place</string>
+    <string name="location">Location</string>
+    <string name="rating">Rating</string>
+    <string name="activities">Activities</string>
+    <string name="map">Map</string>
+    <string name="help">Help</string>
+    <string name="once_the_marker_is_placed_tapped_the_marker_then_follow_the_instruction_to_add_it_to_your_list_of_locations">Once the marker is placed tapped the marker then follow the instruction to add it to your list of locations.</string>
+    <string name="swipe_left_or_right_on_a_entry_to_delete_a_entry">Swipe left or right on a entry to delete a entry,</string>
+    <string name="tap_a_entry_to_edit_it">Tap a entry to edit it.</string>
+    <string name="navigate_the_map_until_you_find_desired_location_then_just_press_that_location_once">Navigate the map until you find desired location then just press that location once.</string>
+    <string name="map_help">Map Help</string>
+    <string name="shake_screen_for_a_random_location">Shake screen for a random location.</string>
+    <string name="locations">Locations</string>
+    <string name="above_the_locations_you_can_order_the_locations_alphabetical_oldest_newest">Above the locations you can order the locations (Alphabetical, Oldest, Newest)</string>
+    <string name="for_each_location_you_can_locate_it_on_the_map_find_weather_find_resturants_find_attractions_find_directions">For each location you can locate it on the map, find weather, find resturants, find attractions, find directions.</string>
+</resources>
